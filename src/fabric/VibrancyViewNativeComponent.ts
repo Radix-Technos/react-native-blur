@@ -7,6 +7,7 @@ import type {
 
 interface NativeProps extends ViewProps {
   blurType?: WithDefault<
+    | 'transparent'
     | 'dark'
     | 'light'
     | 'xlight'
