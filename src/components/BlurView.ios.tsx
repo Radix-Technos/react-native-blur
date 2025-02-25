@@ -3,6 +3,7 @@ import { StyleSheet, ViewProps, ViewStyle, View } from 'react-native';
 import NativeBlurView from '../fabric/BlurViewNativeComponent';
 
 type BlurType =
+  | 'transparent'
   | 'dark'
   | 'light'
   | 'xlight'
