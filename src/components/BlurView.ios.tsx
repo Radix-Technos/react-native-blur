@@ -30,6 +30,7 @@ export type BlurViewProps = ViewProps & {
   blurType?: BlurType;
   blurAmount?: number;
   reducedTransparencyFallbackColor?: string;
+  overlayColor?: string;
 };
 
 const BlurView = forwardRef<View, BlurViewProps>(
