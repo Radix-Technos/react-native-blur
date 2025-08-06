@@ -40,6 +40,10 @@ const BlurView = forwardRef<View, BlurViewProps>(
     },
     ref
   ) => {
+    // 'transparent' quebra no Android.
+    if ((blurType as any) === 'transparent')
+      blurType = 'dark';
+
     useEffect(() => {
       DeviceEventEmitter.addListener('ReactNativeBlurError', (message) => {
         throw new Error(`[ReactNativeBlur]: ${message}`);
